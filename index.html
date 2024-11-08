@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,  initial-scale=1.0">
+          <link rel="stylesheet" href="./style.css">
+          <title>Bulb</title>
+    
+</head>
+  <body>
+    <script>
+        function turnOnOff() {
+            let image = document.getElementById("Image");
+            if (image.src.match("ONbulb"))
+                image.src =
+"https://media.geeksforgeeks.org/wp-content/uploads/OFFbulb.jpg";
+            else
+                image.src =
+"https://media.geeksforgeeks.org/wp-content/uploads/ONbulb.jpg";
+        }
+        
+        
+    </script>
+ 
+   <div class="image1">
+    <img id="Image"  src=
+    "https://media.geeksforgeeks.org/wp-content/uploads/OFFbulb.jpg">
+    
+   </div>
+   <div class="bulb1">
+    
+   <label class="switch">
+  <input type="checkbox" onclick="turnOnOff()">
+  <span class="slider round"></span>
+</label>
+   </div>
+ 
+   
+</body>
+ 
+</html>
